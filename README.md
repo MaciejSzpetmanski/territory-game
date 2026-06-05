@@ -1,32 +1,77 @@
 # Territory
 
-A small React canvas territory-capture game. Expand your territory, trace loops to claim space, cut enemy trails, and survive.
+A fast-paced multiplayer territory-conquest game built with React.
+
+Expand your territory, draw trails outside your borders, capture new land, and eliminate opponents before they eliminate you. Inspired by classic territory-control arcade games, **Territory** combines strategic expansion, risk management, and competitive survival.
+
+---
 
 ## Features
 
-- 2–4 players
-- Human and AI players
-- Adjustable board size, game speed, and level seed
-- Seeded procedural map generation
-- Canvas-based pixel-art rendering
-- Keyboard controls for local multiplayer
+* 🎮 Local multiplayer support for up to 4 players
+* 🤖 AI opponents with Easy, Medium, and Hard difficulty levels
+* 🗺️ Procedurally generated maps with configurable seeds
+* ⚡ Adjustable game speed
+* 👑 Domination victory system
+* 🏆 Last-player-standing elimination mode
+* 🎨 Modern neon-inspired visual design
+* 📱 Responsive canvas scaling for different screen sizes
+
+---
+
+## Gameplay
+
+Each player starts with a small territory.
+
+To expand:
+
+1. Leave your territory.
+2. Draw a trail through neutral space.
+3. Return safely to your own territory.
+4. The enclosed area becomes yours.
+
+Be careful:
+
+* If another player crosses your active trail, you are eliminated.
+* Crossing your own trail before reconnecting to your territory can be fatal.
+* Holding more than 50% of the playable map for 30 seconds triggers a domination victory.
+
+---
 
 ## Controls
 
-| Player | Controls |
-| --- | --- |
-| Player 1 | Arrow keys |
-| Player 2 | WASD |
-| Player 3 | IJKL |
-| Player 4 | Numpad 8 / 2 / 4 / 6 |
+### Player 1
 
-Other controls:
+* Move: Arrow Keys
 
-- `Space` — pause / resume
-- `M` — return to menu
-- `R` — reserved for restart
+### Player 2
 
-## Getting started
+* Move: WASD
+
+### Player 3
+
+* Move: IJKL
+
+### Player 4
+
+* Move: Numpad 8, 4, 2, 6
+
+### Game Controls
+
+* Space — Pause / Resume
+* M — Return to Menu
+* R — Restart
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/territory-game.git
+cd territory-game
+```
 
 Install dependencies:
 
@@ -34,13 +79,21 @@ Install dependencies:
 npm install
 ```
 
-Run locally:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+Open your browser and navigate to:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Build for Production
 
 ```bash
 npm run build
@@ -52,24 +105,57 @@ Preview the production build:
 npm run preview
 ```
 
-## Deploying
+---
 
-This project is a standard Vite React app, so it can be deployed to GitHub Pages, Netlify, Vercel, Cloudflare Pages, or any static host.
+## Technology Stack
 
-## Project structure
+* React
+* Vite
+* HTML5 Canvas
+* JavaScript (ES6+)
+
+---
+
+## Project Structure
 
 ```text
 territory-game/
-├── index.html
-├── package.json
-├── README.md
 ├── src/
 │   ├── App.jsx
-│   ├── index.css
 │   └── main.jsx
-└── .gitignore
+├── public/
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 ```
+
+---
+
+## Future Ideas
+
+* Online multiplayer
+* Match statistics
+* Power-ups and special abilities
+* Additional map generation styles
+* Mobile touch controls
+* Tournament mode
+* Sound effects and music
+
+
+---
+
+## Contributing
+
+Contributions, suggestions, and bug reports are welcome.
+
+Feel free to fork the repository and submit pull requests.
+
+---
 
 ## License
 
-Add a license before publishing if you want others to reuse or modify the game under clear terms.
+This project is licensed under the MIT License.
+
+See the LICENSE file for details.
+

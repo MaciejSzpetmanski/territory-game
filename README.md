@@ -69,7 +69,7 @@ Be careful:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/territory-game.git
+git clone https://github.com/MaciejSzpetmanski/territory-game.git
 cd territory-game
 ```
 
